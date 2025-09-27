@@ -230,12 +230,12 @@ function kirim(){
   document.body.style.backgroundRepeat = "no-repeat";
 
 container.innerHTML = `
-        <div style="text-align:center; padding:50px 0;">
-          <h2 style="color: #000; text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;">TERIMA KASIH</h2>
-          <p style="color: #000; text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;">Data ukuran Anda telah berhasil direkam.</p>
-          <button onclick="localStorage.removeItem('nrp'); window.location.href='index.html';">Logout</button>
-        </div>
-      `;
+  <div style="text-align:center; padding:50px 0;">
+    <h2 style="color: #000; text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;">TERIMA KASIH</h2>
+    <p style="color: #000; text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; **font-size: 14px;**">Data ukuran Anda telah berhasil direkam.</p>
+    <button style="**font-size: 16px;**" onclick="localStorage.removeItem('nrp'); window.location.href='index.html';">Logout</button>
+  </div>
+`;
     } else {
       container.innerHTML = `<p style="color:#ff6666; text-align:center;">Gagal: ${result.message}</p>`;
     }
@@ -248,3 +248,4 @@ container.innerHTML = `
   });
 }
 </script>
+
